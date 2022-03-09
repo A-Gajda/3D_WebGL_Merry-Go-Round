@@ -1,6 +1,6 @@
 # 3D_WebGL_Merry-Go-Round
 
-Projekt z grafiki 3D wykonany w WebGLu, który przedstawia karuzelę (obracające się konie na podstawce) oraz otoczenie. Preferowanym sposobem uruchomienia jest Visual Studio Code z rozszerzeniem Live Server.
+Projekt z grafiki 3D wykonany w WebGLu, który przedstawia karuzelę (obracające się konie na podstawce) oraz proste otoczenie. Preferowanym sposobem uruchomienia jest Visual Studio Code z rozszerzeniem Live Server.
 
 Przedstawiona scenka ma kilka źródeł światła - światło słoneczne padające z góry, punktowe źródło światła nad drgającą kulą oraz reflektor umiejscowiony w ciemnym rogu podstawki.
 
