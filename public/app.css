@@ -1,0 +1,32 @@
+canvas {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+}
+
+.myDiv {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.myDivGeneral {
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.myButton {
+    width: 200px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.buttonsDiv {
+    margin-top: 30px;
+}

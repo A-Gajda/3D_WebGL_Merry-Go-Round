@@ -1,0 +1,79 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+	<head>
+		<title>WebGL - Merry-go-round</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+        <script src="gl-matrix.js" defer></script>
+		<script src="app.js" defer></script>
+		<script src="util.js"> defer</script>
+		<script src="helpers.js" defer></script>
+	</head>
+	<body onload="InitApp()">
+        <div class="myDivGeneral">
+            <div class="myDiv">
+                <div>
+                    <input type="radio" id="camera1" name="camera" oninput="Camera(this)" checked />
+                    <label for="camera1">Nieruchoma kamera</label>
+                </div>
+                <div>
+                    <input type="radio" id="camera2" name="camera" oninput="Camera(this)" />
+                    <label for="camera2">Kamera obserwująca obiekt</label>
+                </div>
+                <div>
+                    <input type="radio" id="camera3" name="camera" oninput="Camera(this)" />
+                    <label for="camera3">Ruchoma kamera</label>
+                </div>
+            </div>
+            <label></label>
+            <div class="myDiv">
+                <div>
+                    <input type="radio" id="shading2" name="shading" oninput="Shading(this)" checked />
+                    <label for="shading2">Cieniowanie Phonga</label>
+                </div>
+                <div>
+                    <input type="radio" id="shading1" name="shading" oninput="Shading(this)" />
+                    <label for="shading1">Cieniowanie Gourauda</label>
+                </div>
+            </div>
+            <div class="myDiv">
+                <div>
+                    <input type="radio" id="lighting1" name="lighting" oninput="Lighting(this)" checked />
+                    <label for="lighting1">Model Phonga</label>
+                </div>
+                <div>
+                    <input type="radio" id="lighting2" name="lighting" oninput="Lighting(this)" />
+                    <label for="lighting2">Model Blinna</label>
+                </div>
+            </div>
+            <div class="myDiv">
+                <div>
+                    <input type="radio" id="day" name="daytime" oninput="MakeDay()" checked />
+                    <label for="day">Dzień</label>
+                </div>
+                <div>
+                    <input type="radio" id="night" name="daytime" oninput="MakeNight()" />
+                    <label for="night">Noc</label>
+                </div>
+            </div>
+            <div class="myDiv">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="99" value="10" oninput="Fog(this)" id="fog">
+                    <label for="fog">Mgła</label>
+                </div>
+            </div>
+            <div class="myDiv">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="99" value="50"  oninput="Angle(this)" id="reflector">
+                    <label for="fog">Kierunek reflektora</label>
+                </div>
+            </div>
+            <div class="buttonsDiv">
+                <center><button class="myButton" id="simple" onclick="SimpleHorses()" >Prosty wygląd koni</button></center>
+                <center><button class="myButton" id="complicated" onclick="ComplicatedHorses()" >Skomplikowany wygląd koni</button></center>
+            </div>
+        </div>
+		<canvas id="game-surface" width="800" height="600">
+			Your browser does not support HTML5
+		</canvas>
+	</body>
+</html>
